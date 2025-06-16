@@ -1,0 +1,154 @@
+body {
+    background-color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+}
+
+.title {
+    color: #E8490F;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+input::placeholder {
+    color: #707474;
+    font-size: 14px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#bg {
+    background-color: #F2EDE9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#resultado {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#resultado span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-word;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0E4194;
+}
+
+.input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn-calculate {
+    background-color: #0E4194;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-calculate:hover {
+    background-color: #1d59b9;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn-calculate {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header img {
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn-calculate {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
